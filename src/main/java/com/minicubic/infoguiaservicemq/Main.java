@@ -84,7 +84,7 @@ public class Main implements MqttCallback {
              * 
              * Los valores de los parámetros deben ir en el mensaje.
              */
-            String service = "com.minicubic.infoguiaserver.services." + topic.split("/")[2];
+            String service = "com.minicubic.infoguiaservicemq.services." + topic.split("/")[2];
             String method = topic.split("/")[3];
             String token = topic.split("/")[4];
             String response = "/" + topic.split("/")[2] +"Response"+ "/" + method  + "/" + token;
