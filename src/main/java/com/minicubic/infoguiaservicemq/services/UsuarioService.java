@@ -1,6 +1,7 @@
 package com.minicubic.infoguiaservicemq.services;
 
 import com.minicubic.infoguiacore.dao.UsuarioDao;
+import com.minicubic.infoguiacore.dto.UsuarioDto;
 import com.minicubic.infoguiacore.model.TipoUsuario;
 import com.minicubic.infoguiacore.model.Usuario;
 import java.util.List;
@@ -19,7 +20,7 @@ public class UsuarioService {
      * @param id
      * @return Registro especifico de usuario
      */
-    public Usuario getUsuario(Long id) {
+    public UsuarioDto getUsuario(Long id) {
         return dao.getUsuario(id);
     }
     
